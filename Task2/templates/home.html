@@ -1,0 +1,35 @@
+{%extends 'base.html' %}
+
+{%block title%}
+Home Page
+{% endblock %}
+{%block body%}
+<div class="b-example-divider"></div>
+
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+
+        <div class="text-end">
+          <a class="btn btn-outline-light me-2" href="/list" >List</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="px-4 py-5 my-5 text-center " >
+    <div class="container mt-5 ">
+
+        <h1 class="my-3">Enter your name </h1>
+        <form method="post">
+
+          <input name ="first_name" id="first_name" class="frome-control my-1" placeholder="Enter first name"/><br>
+          <input name ="last_name" id="last_name" class="frome-control my-1" placeholder="Enter last name"/><br>
+          <input type="submit" class="btn btn-success my-3 " value="Enter"/>
+        </form>
+    </div>
+  </main>
+{% endblock %}
